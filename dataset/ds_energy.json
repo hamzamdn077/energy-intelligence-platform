@@ -1,0 +1,26 @@
+{
+	"name": "ds_energy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Location": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "item()",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	}
+}
