@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: energy
+    database: energy
+    schema: silver
+    tables:
+      - name: electricity

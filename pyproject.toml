@@ -1,0 +1,20 @@
+[project]
+name = "energy-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hamza", email = "hamzamdn1981@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core>=1.12.3",
+    "dbt-databricks>=1.12.5",
+]
+
+[project.scripts]
+energy-project = "energy_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"

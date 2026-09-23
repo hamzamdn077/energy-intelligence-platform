@@ -1,0 +1,14 @@
+.venv/
+.vscode/
+.idea/
+
+logs/
+energy/logs/
+energy/target/
+energy/dbt_packages/
+
+__pycache__/
+*.pyc
+
+.env
+.env.*

@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: period
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_location
+    columns:
+      - name: location
+        data_tests:
+          - not_null
+          - unique
+
+  - name: fct_electricity_generation
+    columns:
+      - name: period
+        data_tests:
+          - not_null
+
+      - name: location
+        data_tests:
+          - not_null
+
+      - name: fuel_type_id
+        data_tests:
+          - not_null
